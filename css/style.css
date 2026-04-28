@@ -247,10 +247,9 @@ header .head-btn a:hover {
 }
 
 /* flex 布局替代 float，避免不等高卡片造成的空隙 */
-/* 清除 Bootstrap container/row/col 对 flex 布局的干扰 */
+/* 清除 Bootstrap container 对 flex 布局的干扰 */
 .mainContent,
-.linkList-item,
-.linkList-item .row.dh {
+.linkList-item {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -262,6 +261,8 @@ header .head-btn a:hover {
   row-gap: 10px;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .linkList-item .row.dh > .col-sm-6,
