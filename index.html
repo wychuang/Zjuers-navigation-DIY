@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://zjuers.com/ -->
+<html>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="浙江大学,导航,zjuers,zjuer,首页,轻首页,主页">
+        <meta name="description" content="浙江大学专属的导航页 ZJUers轻首页">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <title>ZJUers轻首页-自定义版</title>
+        <link rel="shortcut icon" href="./ZJUers轻首页_files/ico.png">
+        <link rel="stylesheet" href="./ZJUers轻首页_files/zui.min.pure.css">
+        <link rel="stylesheet" href="./ZJUers轻首页_files/style.min.css">
+        <link rel="stylesheet" href="./ZJUers轻首页_files/titlenotes.css">
+        <link href="./css/font-awesome.min.css" rel="stylesheet">
+        <link href="./css/zui.min.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="./css/media.css" rel="stylesheet">
+        <script src="./ZJUers轻首页_files/titlenotes.js"></script>
+        <script src="./ZJUers轻首页_files/jquery.js"></script>
+        <!-- 本地预览时禁用统计脚本 -->
+        <!-- <script>var _hmt = ... baidu analytics ...</script> -->
+        <!-- <script>... 51.la analytics ...</script> -->
+        <!-- <script>... 51.la perf ...</script> -->
+</head>
+
+<body>
+        <div class="customize-mode-tips">
+                <h4>自定义模式</h4>
+                <a href="javascript:;" class="customize">退出</a>
+        </div>
+        <header>
+                <div class="container" style="padding-right:0;padding-left:0">
+                        <div class="main">
+                                <h1 class="logo"><a href=""><img src="./ZJUers轻首页_files/ico.png"> <span
+                                                        xt-marked="ok">ZJUers轻首页-自定义大模型版</span></a></h1>
+                                <div class="head-btn">
+                                        <a href="javascript:;" class="sethome" data-toggle="tooltip"
+                                                data-placement="bottom" title="设为首页"
+                                                onclick="setHome(this，window。location);"><i class="fa fa-home"></i></a>
+                                        <a href="javascript:;" class="customize" data-toggle="tooltip"
+                                                data-placement="bottom" title="自定义模式"><i class="fa fa-cog"></i></a>
+                                        <a href="http://zjuers-com-s.webvpn.zju.edu.cn:8001/" target="_blank"
+                                                data-toggle="tooltip" data-placement="bottom"
+                                                title="套webvpn的原版ZJUers轻首页"><i class="fa fa-book"></i></a>
+                                        <a href="https://zjuers.com/" target="_blank" data-toggle="tooltip"
+                                                data-placement="bottom" title="前往zjuers.com"><i
+                                                        class="fa fa-umbrella"></i></a>
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <div id="content" data-customize="true" data-customtheme="true" class="default-bg">
+                <div class="main-index">
+                        <div class="container mainContent">
+                                <section class="sousuo">
+                                        <div class="search">
+                                                <div class="search-box"><img class="search-icon"
+                                                                src="./ZJUers轻首页_files/logo.jpg"> <input type="text"
+                                                                id="txt" class="search-input" autofocus=""
+                                                                placeholder=" 点击左侧切换搜索引擎~">
+                                                        <button class="search-btn visible-sm visible-md visible-lg"
+                                                                id="search-btn">GO</button> <i class="search-clear"
+                                                                >x</i>
+                                                </div>
+                                                <div class="search-engine" style="display:none">
+                                                        <div class="search-engine-head"><strong
+                                                                        class="search-engine-tit">请选择搜索引擎：</strong>
+                                                        </div>
+                                                        <ul class="search-engine-list">
+                                                                <li><img src="./ZJUers轻首页_files/logo.jpg">百度</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_2.jpg">谷歌</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_3.jpg">必应</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_4.jpg">360</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_6.jpg">浙大通</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_5.jpg">搜狗</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_7.jpg">知乎</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_8.jpg">有道</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_9.jpg">B站</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_11.jpg">CSDN</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_12.jpg">Github</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_12.jpg">GH镜</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_14.jpg">学术词</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_2.jpg">谷歌镜</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_2.jpg">学术镜</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_2.jpg">学术2</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_15.ico">wiki镜</li>
+                                                                <li><img src="./ZJUers轻首页_files/logo_15.ico">英文镜</li>
+                                                        </ul>
+                                                </div>
+                                                <div style="height:10px"></div>
+                                                <div class="link-rec"> <a id="info0" target="_blank" rel="follow"
+                                                                style="color:gray;padding-right:14px;"
+                                                                href="https://zjuers.com/"></a><a id="info1"
+                                                                target="_blank" rel="follow"
+                                                                style="color:gray;padding-right:14px;"
+                                                                href="https://zjuers.com/"></a><span
+                                                                class="bianji">编辑</span></div>
+                                        </div>
+                                </section>
+                                
+                                <section class="linkList-item">
+                                        <div class="row dh">
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh ">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat1">浙大 · 教学</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="xzzd"
+                                                                                href="https://courses.zju.edu.cn/user/index"
+                                                                                target="_blank">学在浙大</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jww"
+                                                                                href="http://jwbinfosys.zju.edu.cn/"
+                                                                                target="_blank">教务网</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="cls" href="https://chalaoshi.de/"
+                                                                                target="_blank">查老师</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jxgl"
+                                                                                href="http://zdbk.zju.edu.cn/jwglxt/xtgl/index_initMenu.html"
+                                                                                target="_blank">教学管理</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zykt"
+                                                                                href="https://classroom.zju.edu.cn/"
+                                                                                target="_blank">智云课堂</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="wsbm"
+                                                                                href="http://zdbk.zju.edu.cn/kszx/index/initMenu.zf"
+                                                                                target="_blank">网上报名</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jjw_yjs"
+                                                                                href="http://grs.zju.edu.cn/allogene/page/home.htm"
+                                                                                target="_blank">教务网(研)</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="yzzd"
+                                                                                href="https://research.zju.edu.cn/"
+                                                                                target="_blank">研在浙大</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="pta"
+                                                                                href="https://pintia.cn/problem-sets?tab=0"
+                                                                                target="_blank">PTA</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="sztzw"
+                                                                                href="http://www.youth.zju.edu.cn/sztz/"
+                                                                                target="_blank">素质拓展网</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jxzygl"
+                                                                                href="http://jxzygl.zju.edu.cn/default.html"
+                                                                                data-toggle="tooltip"
+                                                                                title="该网站兼容性较差,可能显示错误"
+                                                                                target="_blank">教学资源管理</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="grkbcx"
+                                                                                href="http://appservice.zju.edu.cn/zdjw/grkb"
+                                                                                target="_blank">个人课表查询</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat8">AI · 大模型</strong><input
+                                                                                class="edit-category"></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://chatgpt.com/" target="_blank" title="ChatGPT">ChatGPT</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://claude.ai/" target="_blank" title="Claude">Claude</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://gemini.google.com/" target="_blank" title="Gemini">Gemini</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://grok.com/" target="_blank" title="Grok">Grok</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://chat.deepseek.com/" target="_blank" title="DeepSeek">DeepSeek</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://kimi.moonshot.cn/" target="_blank" title="Kimi">Kimi</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://www.doubao.com/chat/" target="_blank" title="豆包">豆包</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://tongyi.aliyun.com/" target="_blank" title="通义千问">通义千问</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://chatglm.cn/" target="_blank" title="智谱清言">智谱清言</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://yiyan.baidu.com/" target="_blank" title="文心一言">文心一言</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://aistudio.google.com/" target="_blank" title="Google AI Studio">AI Studio</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://notebooklm.google.com/" target="_blank" title="NotebookLM">NotebookLM</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://lmarena.ai/" target="_blank" title="Chatbot Arena">LM Arena</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://suno.com/" target="_blank" title="Suno AI音乐">Suno</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://metaso.cn/" target="_blank" title="秘塔AI搜索">秘塔AI搜索</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://huggingface.co/" target="_blank" title="Hugging Face">HuggingFace</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://linux.do/" target="_blank" title="Linux.do社区">Linux.do</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://github.com/copilot" target="_blank" title="GitHub Copilot">Copilot</a><span class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat2">浙大 · 信息化服务</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="rvpn"
+                                                                                href="https://rvpn.zju.edu.cn/"
+                                                                                target="_blank">RVPN</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="webvpn"
+                                                                                href="https://webvpn.zju.edu.cn/"
+                                                                                target="_blank">WebVPN</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="swrz" href="http://net3.zju.edu.cn/"
+                                                                                data-toggle="tooltip"
+                                                                                title="校内ZJUWLAN上网认证页面"
+                                                                                target="_blank">上网认证</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zbrj" href="http://ms.zju.edu.cn/"
+                                                                                target="_blank">正版软件</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdyx"
+                                                                                href="https://zjuem.zju.edu.cn/"
+                                                                                target="_blank">浙大邮箱</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="wfgl"
+                                                                                href="https://myvpn.zju.edu.cn/"
+                                                                                target="_blank">网费管理</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdyp"
+                                                                                href="https://pan.zju.edu.cn/zjusso/"
+                                                                                target="_blank">浙大云盘</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdyq"
+                                                                                href="https://yuque.zju.edu.cn/"
+                                                                                target="_blank">浙大语雀</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdbd"
+                                                                                href="https://form.zju.edu.cn/"
+                                                                                target="_blank">浙大表单</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdfwpt"
+                                                                                href="https://service.zju.edu.cn/"
+                                                                                target="_blank">浙大服务平台</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="swfww"
+                                                                                href="http://xwfw.zju.edu.cn/"
+                                                                                target="_blank">校务服务网</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zhfww"
+                                                                                href="http://zhfw.zju.edu.cn/"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">综合服务网</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat3">浙大 · 其它</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="cc98campus"
+                                                                                href="https://www.cc98.org/"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">CC98</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="nhd" href="http://www.nexushd.org/"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">NexusHD</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ddxyq"
+                                                                                href="https://www.duoduo.link/"
+                                                                                target="_blank">朵朵校友圈</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="98webvpn"
+                                                                                href="http://www-cc98-org-s.webvpn.zju.edu.cn:8001/"
+                                                                                data-toggle="tooltip"
+                                                                                title="通过WebVPN访问,如卡顿请刷新"
+                                                                                target="_blank">CC98(校外)</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="eta" href="http://eta.zju.edu.cn/"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">ETA</a><span
+                                                                                class="bianji">编辑</span>
+                                                                </div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bccx"
+                                                                                href="http://www.life.zju.edu.cn/_web/_apps/lightapp/busQuery/mobile/app/pub/index.html"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="tzzd" href="http://tzzd.zju.edu.cn/"
+                                                                                target="_blank">团在浙大</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jcc"
+                                                                                href="http://cwcx.zju.edu.cn/WFManager/login.jsp"
+                                                                                target="_blank">计财处</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jyfw"
+                                                                                href="http://www.career.zju.edu.cn/"
+                                                                                target="_blank">就业服务</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="xydt" href="https://map.zju.edu.cn/"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bksy"
+                                                                                href="https://bksy.zju.edu.cn/"
+                                                                                target="_blank">本科生院</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="styjzs"
+                                                                                href="http://zulg.zju.edu.cn/monitor/show.html"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat4">学术搜索 · 查重</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdtsg"
+                                                                                href="http://libweb.zju.edu.cn/"
+                                                                                target="_blank">浙大图书馆</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="qsxsss"
+                                                                                href="https://zju.summon.serialssolutions.com/"
+                                                                                data-toggle="tooltip"
+                                                                                title="建议校园网或RVPN/WebVPN"
+                                                                                target="_blank">求是学术搜索</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zgzw" href="https://www.cnki.net/"
+                                                                                target="_blank">中国知网</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ggxs"
+                                                                                href="https://scholar.google.com/"
+                                                                                data-toggle="tooltip"
+                                                                                title="大陆访问需要VPN,也可尝试上方搜索框的学术镜/学术2进行搜索"
+                                                                                target="_blank">谷歌学术</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="github" href="https://github.com/"
+                                                                                data-toggle="tooltip"
+                                                                                title="网络不佳时请考虑使用代理或镜像"
+                                                                                target="_blank">Github</a><span
+                                                                                class="bianji">编辑</span>
+                                                                </div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="webofscience"
+                                                                                href="https://www.webofscience.com/"
+                                                                                data-toggle="tooltip"
+                                                                                title="建议校园网或RVPN/WebVPN"
+                                                                                target="_blank">WOS</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="scihub" href="https://sci-hub.ru/"
+                                                                                target="_blank">Sci-Hub</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili4"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili4"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+                                               
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat6">学习 · 影视</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="mooc"
+                                                                                href="https://www.icourse163.org/"
+                                                                                target="_blank">MOOC</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">Bilibili</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="youtube"
+                                                                                href="https://www.youtube.com/"
+                                                                                target="_blank">YouTube</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili3"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili4"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bilibili4"
+                                                                                href="https://www.bilibili.com/watchlater/list"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat7">实用工具</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="txwd"
+                                                                                href="https://docs.qq.com/desktop/"
+                                                                                target="_blank">腾讯文档</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bdwk"
+                                                                                href="https://wenku.baidu.com/"
+                                                                                target="_blank">百度文库</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zzgj"
+                                                                                href="https://tool.chinaz.com/"
+                                                                                target="_blank">站长工具</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat8">社交 · 编程</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zhihu"
+                                                                                href="https://www.zhihu.com/hot"
+                                                                                target="_blank">知乎</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="linux" href="https://linux.do/t/topic/309566"
+                                                                                target="_blank">Linux.do</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="jike" href="https://web.okjike.com/"
+                                                                                target="_blank">即刻</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ssp"
+                                                                                href="https://sspai.com/"
+                                                                                target="_blank">少数派</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="reddit" href="https://www.reddit.com/?feed=home"
+                                                                                target="_blank">Reddit</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="36kr" href="https://www.36kr.com/"
+                                                                                target="_blank">36氪</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="stackexchange" href="https://stackexchange.com/"
+                                                                                target="_blank">stack exchange</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="nmbxd" href="https://www.nmbxd1.com/Forum"
+                                                                                target="_blank">X island</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="36kr" href="https://www.36kr.com/"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                 <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat5">实用工具</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ygmh" href="https://ol.woobx.cn/"
+                                                                                target="_blank">一个木函</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="qqtool"
+                                                                                href="https://tool.browser.qq.com/"
+                                                                                target="_blank">在线工具箱</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="tgxz" href="http://www.xmsj.org/"
+                                                                                target="_blank">听歌下载</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="bdfy"
+                                                                                href="https://fanyi.baidu.com/"
+                                                                                target="_blank">百度翻译</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ggfy"
+                                                                                href="https://translate.google.com/"
+                                                                                data-toggle="tooltip"
+                                                                                title="无法访问时请考虑使用代理"
+                                                                                target="_blank">谷歌翻译</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="slcfy"
+                                                                                href="https://lab.magiconch.com/nbnhhsh/"
+                                                                                target="_blank">缩略词复原</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="dwz" href="https://sina.lt/"
+                                                                                target="_blank">短网址工具</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="QRcodetool"
+                                                                                href="https://cli.im/text"
+                                                                                target="_blank">二维码生成器</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="wjkt" href="https://airportal.cn/"
+                                                                                target="_blank">文件空投</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="wjgszh"
+                                                                                href="https://convertio.co/zh/"
+                                                                                target="_blank">文件格式转换</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="pdftool"
+                                                                                href="https://www.ilovepdf.com/zh-cn"
+                                                                                target="_blank">PDF工具箱</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="imgedit"
+                                                                                href="https://www.iloveimg.com/zh-cn"
+                                                                                target="_blank">在线图片编辑</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat8">编程 · 学习</strong><input
+                                                                                class="edit-category"></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href="https://github.com/" target="_blank" title="GitHub">GitHub</a><span class="bianji">编辑</span></div>
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a" href=" " target="_blank" title="空">空网站</a><span class="bianji">编辑</span></div>
+                                                                
+                                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zhihu"
+                                                                                href="https://www.zhihu.com/hot"
+                                                                                target="_blank">知乎</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="db" href="https://www.douban.com/"
+                                                                                target="_blank">豆瓣</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="nga" href="https://www.runoob.com/"
+                                                                                target="_blank">菜鸟教程</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zhihu"
+                                                                                href="https://www.zhihu.com/hot"
+                                                                                target="_blank">空</a><span
+                                                                                class="bianji">编辑</span></div>
+
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="col-sm-6 col-md-4 mb-3 dh">
+                                                        <div class="row">
+                                                                <div class="col-xs-12"><strong class="link-list-tit"
+                                                                                id="cat9">其它 · 关于本站</strong><input
+                                                                                class="edit-category"></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="wlcs"
+                                                                                href="https://www.speedtest.cn/"
+                                                                                target="_blank">网络测速</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="sshb"
+                                                                                href="https://zh.flightaware.com/live/"
+                                                                                target="_blank">实时航班</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zxbdsm"
+                                                                                href="https://www.virscan.org/"
+                                                                                target="_blank">在线病毒扫描</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="zdxl"
+                                                                                href="https://zjuers.com/banner/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A62023-2024%E5%AD%A6%E5%B9%B4%E6%A0%A1%E5%8E%86.pdf"
+                                                                                target="_blank">浙大校历</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="about"
+                                                                                href="http://speedtest.zju.edu.cn/"
+                                                                                target="_blank">校网测速</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ssyqsm"
+                                                                                href="https://zhfw.zju.edu.cn/65686/list.htm"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">浙大黄页</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="ssyqsm"
+                                                                                href="https://www.cc98.org/topic/4979979"
+                                                                                data-toggle="tooltip"
+                                                                                title="需要校园网或RVPN/WebVPN"
+                                                                                target="_blank">搜索引擎说明</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="about"
+                                                                                href="https://zjuers.com/about"
+                                                                                target="_blank">关于本站&amp;反馈</a><span
+                                                                                class="bianji">编辑</span></div>
+                                                                <div class="col-xs-4 mb-2"><a class="link-list-a"
+                                                                                id="blackmode" href="" target="_self"
+                                                                                data-toggle="tooltip" title="没有这个">#
+                                                                                深色模式 #</a><span class="bianji">编辑</span>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </section>
+                        </div>
+                        <!-- 对话框HTML -->
+                        <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                                        aria-hidden="true">×</span><span
+                                                                        class="sr-only">关闭</span></button>
+                                                        <h4 class="modal-title">自定义链接</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                        <div class="input-control has-icon-left">
+                                                                <input id="inputAccountExample1" type="text"
+                                                                        class="form-control" placeholder="网址名称">
+                                                                <label for="inputAccountExample1"
+                                                                        class="input-control-icon-left"><i
+                                                                                class="icon icon-header"></i></label>
+                                                        </div>
+                                                        <div class="input-control has-icon-left"
+                                                                style="margin-top: 15px">
+                                                                <input id="inputAccountExample2" type="text"
+                                                                        class="form-control"
+                                                                        placeholder="请输入网址,注意网址前面要加上http://">
+                                                                <label for="inputAccountExample1"
+                                                                        class="input-control-icon-left"><i
+                                                                                class="icon icon-link"></i></label>
+                                                        </div>
+                                                        <div class="modal-text">
+                                                                <p class="text-red">网址书写格式：https://xxx.com,网址前面一定要加上“
+                                                                        https:// ”前缀.
+                                                                        (或"http://")</p>
+                                                                <p>tips：自定义链接的数据是储存在浏览器本地缓存上,清空浏览数据（Cookie及其他网站数据）后会导致自定义的数据丢失,所以清理浏览数据的时候切勿选中（Cookie及其他网站数据）选项.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default"
+                                                                data-dismiss="modal">关闭</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                                data-dismiss="modal">保存</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <div id="get-top" data-toggle="tooltip" title="回到顶部" style="padding-top: 3px; font-size: 20px;">↑</div>
+        <script src="./ZJUers轻首页_files/js10.min.js"></script>
+        <script src="./ZJUers轻首页_files/jquery.js"></script>
+        <script src="https://s11.cnzz.com/z_stat.php?id=1261855216&web_id=1261855216" language="JavaScript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zui/1.8.1/lib/jquery/jquery.js"></script>
+        <script src="./dist/js/zui.js"></script>
+        <script src="./layer/layer.js"></script>
+        <script src="./js/js.js?v=6.2.4"></script>
+</body>
+
+</html>
