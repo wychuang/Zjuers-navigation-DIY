@@ -273,6 +273,12 @@ header .head-btn a:hover {
   padding-right: 0 !important;
 }
 
+/* 清除 .row 的 clearfix 伪元素，避免它们成为 flex 子项占位 */
+.linkList-item .row.dh::before,
+.linkList-item .row.dh::after {
+  display: none;
+}
+
 /* 修复内层 .row 负 margin 溢出，避免卡片视觉重叠 */
 .linkList-item .row.dh > .col-sm-6 > .row,
 .linkList-item .row.dh > .col-md-4 > .row {
