@@ -185,3 +185,23 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 
+//暗黑模式切换
+function toggleDarkMode() {
+  var body = document.body;
+  body.classList.toggle('dark-mode');
+  var isDark = body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDark ? 'on' : 'off');
+  // 更新按钮文字
+  var btn = document.getElementById('blackmode');
+  if (btn) btn.innerHTML = isDark ? '☀️ 浅色模式' : '🌙 深色模式';
+}
+
+// 页面加载时恢复暗黑模式状态
+(function () {
+  if (localStorage.getItem('darkMode') === 'on') {
+    document.body.classList.add('dark-mode');
+    var btn = document.getElementById('blackmode');
+    if (btn) btn.innerHTML = '☀️ 浅色模式';
+  }
+})();
+
