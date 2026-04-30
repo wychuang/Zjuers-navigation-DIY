@@ -99,16 +99,20 @@ body {
   top: 0;
 }
 
-/*右部按钮*/
+/*头部flex布局，logo左、按钮自然居中靠右*/
+header .main {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 header .head-btn {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 16px;
   z-index: 100;
   display: flex;
-  gap: 4px;
+  gap: 6px;
+  margin-left: auto;
+  margin-right: 12px;
 }
 
 header .head-btn a {
@@ -370,8 +374,7 @@ header .head-btn a:hover {
   }
 
   header .head-btn {
-    right: 5px;
-    gap: 0;
+    gap: 2px;
   }
 
   header .head-btn a {
