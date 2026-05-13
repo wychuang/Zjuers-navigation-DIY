@@ -37,6 +37,18 @@ $('[data-toggle="tooltip"]').tooltip({
   tipClass: 'tooltip-info'
 });
 
+// Auto-assign deterministic IDs to link-list-a elements that lack them,
+// so localStorage save/restore has a stable key to work with.
+$('a.link-list-a').each(function () {
+  if (!$(this).attr('id')) {
+    var card = $(this).closest('.dh');
+    var catId = card.find('.link-list-tit').attr('id') || 'card';
+    var links = card.find('a.link-list-a');
+    var idx = links.index(this);
+    $(this).attr('id', catId + '-link-' + idx);
+  }
+});
+
 //检测本地是否存在localStorage，若存在则遍历localStorage的值到对应的元素内
 if (localStorage.length != 0) {
   for (var i = 0; i < localStorage.length; i++) {
@@ -44,9 +56,12 @@ if (localStorage.length != 0) {
     var data = localStorage.getItem(localStorage.key(i));
     data = data.split('|');
     var value1 = data[0], value2 = data[1];
-    if (linkId.length <= 10 && linkId != "page_/") {
+    // Restore link data — skip known non-link keys
+    if (linkId !== 'darkMode' && linkId !== 'page_/' && !/^cat/.test(linkId)) {
       var getID = $('#' + linkId);
-      getID.html(value1).attr("href", value2);
+      if (getID.length) {
+        getID.html(value1).attr('href', value2);
+      }
     }
   }
 }
@@ -128,11 +143,13 @@ function CustomMode() {
   $('.btn-primary').click(function () {
     var text = $('#inputAccountExample1').val();
     var text2 = $('#inputAccountExample2').val();
+    // Ensure the link has an id for localStorage persistence
+    if (!idValue) {
+      idValue = 'link-' + Date.now();
+      $(thisIink).attr('id', idValue);
+    }
     window.localStorage.setItem(idValue, text + '|' + text2);
-    var data = localStorage.getItem(idValue);
-    data = data.split('|');
-    var value1 = data[0], value2 = data[1];
-    $(thisIink).html(value1).attr("href", value2);
+    $(thisIink).html(text).attr('href', text2);
   });
 }
 
